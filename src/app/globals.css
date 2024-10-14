@@ -15,13 +15,1499 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  /* color: var(--foreground); */
+  /* background: var(--background); */
   font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.header {
+  background-color: palevioletred;
+  height: 60px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.header-buttons {
+  margin-left: 20px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: larger;
+  font-weight:600;
+  padding-top: 15px;
+}
+
+.hero-sec {
+  background-color: #F3D9DC;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-msg {
+  display: flex;
+  justify-content: center;
+  font-family:sans-serif ;
+  color: rgb(235, 49, 111);
+  text-shadow: 2px 2px 2px rgb(97, 96, 96);
+  height: 40px;
+  font-weight: 900;
+  font-size: 36px;
+  align-items: center;
+  padding-right: 200px;
+ -webkit-animation: scale-in-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+
+  }
+  
+.hero-img {
+  background-image: url("hero-image.png");
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+  padding-left: 60px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  margin-top: 100px;
+  text-shadow: 2px 2px 2px rgb(107, 104, 104);
+}
+
+.text :hover {
+  color: rgb(211, 50, 104) ;
+}
+
+.about-sec {
+  background-color: #F3D9DC ;/*#C78283*/
+  height: 180vh;
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.first-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.other-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+.box-content {
+  width: 310px;
+  height: 430px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 30px;
+  transition-duration: 0.5s;
+  border: 3px solid white;
+  flex-wrap: wrap;
+}
+
+.box-content:hover {
+  border: 3px solid palevioletred;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.imageContainer01 {
+  width: 100%;
+  height: 200px;
+  background-image: url(img01.jpeg);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.imageContainer02 {
+  width: 100%;
+  height: 200px;
+  background-image: url(img-02.jpeg);
+  background-size: cover;
+
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.imageContainer03 {
+  width: 100%;
+  height: 200px;
+  background-image: url(img-03.png);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.imageContainer04 {
+  width: 100%;
+  height: 200px;
+  background-image: url(img-04.jpeg);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.imageContainer05 {
+  width: 100%;
+  height: 200px;
+  background-image: url(img-05.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.imageContainer06 {
+  width: 100%;
+  height: 200px;
+  background-image: url(img-06.jpeg);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 17px;
+  margin-bottom: 18px;
+}
+
+.description {
+  font-size: 15px;
+  font-weight:500;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.readMore {
+  width: 40%;
+  margin-top:20px ;
+  background-color: palevioletred;
+  border: 1px solid white;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  font-weight:600;
+
+}
+
+.readMore:hover {
+  border: 1px solid brown;
+  color: black;
+  background-color: rgb(243, 233, 234);
+  transform: scale(1.1) translateZ(10px);
+  transition: .3s;
+  box-shadow: 5px 5px;
+}
+
+.footer {
+  color: white;
+  background-color: palevioletred;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight:700;
+  height: 170px;
+  width:100%;
+  cursor: pointer;
+}
+
+.footer:hover {
+  color: black;
+
+}
+
+/** blog 1**/
+
+.blog1 {
+  background-color: rgb(241, 227, 230);
+  height:1100px;
+  width: 100%;
+  -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+   animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+.intro-text {
+  color: #0a0a0a;
+  display: flex;
+  padding: 20px;
+  font-size: 20px;
+  font-weight:500;
+  margin-left: 40px;
+}
+.p1-h1 {
+  color: rgb(199, 91, 127);
+  display: flex;
+  font-weight: 700;
+  font-size: 27px;
+  padding:50px 0px 0px 50px;
+}
+
+/**blog 2 **/
+
+.blog2 {
+  background-color:#f8d3d3;
+  height:110vh;
+  width: 100%;
+  -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+   animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/** blog 3 **/
+
+.blog3 {
+  background-color: #e7c2c2;
+  height: 1100px;
+  width: 100%;
+  -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+   animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/** blog4 **/
+
+.blog4 {
+  background-color: #fde2da;
+  height: 1100px;
+  width: 100%;
+  -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+   animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/** blog5 **/
+
+.blog5 {
+  background-color: #F3D9DC;
+  height: 1100px;
+  width: 100%;
+  -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+   animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/** blog6 **/
+
+.blog6 {
+  background-color: rgb(241, 227, 230);;
+  height: 1100px;
+  width: 100%;
+  -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+   animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/**contact us**/
+
+.contact-page {
+  width:100%;
+  height: 10vh;
+}
+
+.contact-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 33px;
+  margin-top: 0px;
+  font-weight:800;
+  font-family: sans-serif;
+  color: rgb(223, 73, 123);
+  -webkit-animation: fade-in-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.contact-text {
+  font-size: 19px;
+  padding:4% 20% 20% 27% ;
+  /*text-align:center ;*/
+  font-weight:500;
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+}
+
+
+/**about**/
+
+.about-page {
+  width:100%;
+  height: 110vh;
+}
+
+.about-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 33px;
+  font-weight:800;
+  /*padding-bottom:30px;*/
+  padding-top: 50px;
+  font-family: sans-serif;
+  color: rgb(223, 73, 123);
+  -webkit-animation: fade-in-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.about-text {
+  font-size: 19px;
+  padding:4% 20% 20% 20% ;
+  text-align:center ;
+  font-weight:500;
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .header-buttons {
+    justify-content: center;
+    gap: 12px;
+    font-size: large ;
+  }
+  .hero-img {
+    display: none;
+  }
+
+  .hero-sec {
+    height: 50vh;
+  }
+  
+  .hero-msg {
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding-bottom: 90px;
+    margin-left: 170px;
+    padding-top: 70px;
+    text-align: center;
+    position: absolute;
+
+  }
+
+  .text {
+    font-size: 16px;
+    padding-top:0%;
+    margin-bottom: 20px;
+  }
+
+  .about-sec {
+    height: 200%;
+  }
+
+  .first-boxes {
+    display: block;
+    justify-content: center;
+  }
+
+  .other-boxes {
+    display: block;
+    padding-top: 0px;
+  }
+
+  .box-content {
+    width: 270px;
+    height: 408px;
+  }
+
+  .description {
+    font-size: 13px ;
+  }
+
+  .footer {
+    font-size: small;
+  }
+
+  .blog1 {
+    height: 100%;
+    display: block;
+  }
+  .blog1 .p1-h1 {
+    padding-left:13%;
+  }
+
+  .blog1 h2 {
+    padding-left: 3%;
+  }
+  .blog1 h2 p {
+    padding-left: 7%;
+  }
+  .intro-text {
+    padding-right: 13%;
+  }
+
+  /** blog 1 **/
+
+  .blog2 {
+    height: 100%; 
+  }
+
+  .blog2 h1 {
+    font-size: x-large;
+    padding-top: 8%;
+  }
+
+  .blog2 p {
+    font-size: smaller;
+  }
+
+  .blog2 b {
+    font-size: medium;
+  }
+
+  .blog3 {
+    height: 100%; 
+  }
+   
+  .blog4 {
+    height: 100%; 
+  }
+  .blog4 h1 {
+    font-size: x-large;
+    padding-left: 1%;
+    padding-bottom: 9%;
+  }
+
+  .blog4 p {
+    font-size: medium;
+  }
+
+  .blog5 {
+    height: 100%; 
+  }
+
+  .blog5 h1 {
+    font-size: xx-large;
+  }
+
+  .blog5 p {
+    font-size: medium;
+  }
+
+  .blog6 {
+    height: 100%; 
+  }
+
+  .blog6 h1 {
+    font-size: xx-large;
+  }
+
+  .blog6 p {
+    font-size: medium;
+  }
+
+  .about-page {
+    height: 100%;
+  }
+
+  .about-text {
+    margin-top: 4%;
+  }
+
+  .contact-heading {
+    margin-top: 3%;
+  }
+
+  .contact-text {
+    margin-top: 3%;
+    padding-left: 30%;
+  }
+
+}
+
+
+@media only screen and (max-width: 450px) {
+  .header-buttons {
+    justify-content: center;
+    font-size: large;
+    gap: 12px;
+  }
+  .hero-img {
+    display: none;
+  }
+  
+  .hero-msg {
+    font-size: 19px;
+    padding-bottom: 80px;
+    margin-left: 170px;
+    text-align: center;
+    padding-top: 60px;
+    position: absolute;
+  }
+
+  .text {
+    font-size: 15px;
+    padding-top:0%;
+    margin-bottom: 20px;
+  }
+
+  .about-sec {
+    height: 100%;
+  }
+
+  .first-boxes {
+    display: block;
+  }
+
+  .other-boxes {
+    display: block;
+    padding-top: 0px;
+  }
+
+/** blog 1 **/
+
+  .blog1 {
+    height: 100%;
+    display: block;
+  }
+  .blog1 .p1-h1 {
+    padding-left:13%;
+  }
+  .blog1 h2 {
+    padding-left:2%;
+  }
+  .blog1 h2 p {
+    padding-left: 8%;
+  }
+  .intro-text {
+    padding-right: 13%;
+  }
+
+  /** blog 2 **/
+
+  .blog2 {
+    height: 100%; 
+  }
+
+  .blog2 h1 {
+    font-size:xx-large;
+  }
+
+  .blog2 b {
+    font-size: medium;
+  }
+
+  .blog3 {
+    height: 100%; 
+  }
+   
+  .blog4 {
+    height: 100%; 
+  }
+
+  .blog5 {
+    height: 100%; 
+  }
+  .blog6 {
+    height: 100%; 
+  }
+
+  .footer {
+    font-size:smaller;
+  }
+
+  .about-page {
+    height: 100%;
+  }
+
+  .about-text {
+    margin-top: 2%;
+  }
+
+  .contact-text {
+    margin-top: 3%;
+    padding-left: 23%;
+  }
+
+  .contact-heading {
+    font-size: xx-large;
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  .header-buttons {
+    justify-content: center;
+    font-size: large;
+    font-weight: 600;
+  }
+  .hero-img {
+    display: none;
+  }
+  
+  .hero-msg {
+    flex-wrap: wrap;
+    font-size: 18px;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    margin-left: 170px;
+    text-align: center;
+    position: absolute;
+
+  }
+
+  .text {
+    font-size: 15px;
+    padding-top:0%;
+    margin-bottom: 20px;
+  }
+
+  .about-sec {
+    height: 200%;
+  }
+
+  .first-boxes {
+    display: block;
+  }
+
+  .other-boxes {
+    display: block;
+    padding-top: 0px;
+  }
+
+  .box-content {
+    width: 290px;
+    height: 390px;
+  }
+  .description {
+    font-size: 10px;
+  }
+
+  .blog1 {
+    height: 100%;
+    display: block;
+  }
+  .blog1 .p1-h1 {
+    padding-left:13%;
+  }
+  .blog1 h2 p {
+    padding-left: 7%;
+  }
+  .intro-text {
+    padding-right: 13%;
+  }
+
+  /** blog 1 **/
+
+  .blog2 {
+    height: 100%; 
+  }
+
+  .blog2 b {
+    font-size: medium;
+  }
+
+  .blog3 {
+    height: 100%; 
+  }
+   
+  .blog4 {
+    height: 100%; 
+  }
+
+  .blog5 {
+    height: 100%; 
+  }
+  .blog6 {
+    height: 100%; 
+  }
+
+
+}
+
+@media only screen and (max-width: 390px) {
+
+  .header-buttons {
+    justify-content: center;
+    gap: 9px;
+    font-size: medium ;
+  }
+  .hero-img {
+    display: none;
+  }
+
+  .hero-sec {
+    height: 50vh;
+  }
+  
+  .hero-msg {
+    flex-wrap: wrap;
+    font-size: 17px;
+    padding-bottom: 100px;
+    margin-left: 170px;
+    text-align: center;
+    padding-top: 60px;
+    position: absolute;
+  }
+
+  .text {
+    font-size: 14px;
+    padding-top:0%;
+    margin-bottom: 20px;
+  }
+
+  .about-sec {
+    height: 200%;
+  }
+
+  .first-boxes {
+    display: block;
+    justify-content: center;
+  }
+
+  .other-boxes {
+    display: block;
+    padding-top: 0px;
+  }
+
+  .box-content {
+    width: 270px;
+    height: 408px;
+  }
+
+  .description {
+    font-size: 13px ;
+  }
+
+  footer {
+    font-size: small;
+  }
+
+  .blog1 {
+    height: 100%;
+    display: block;
+  }
+  .blog1 .p1-h1 {
+    padding-left:13%;
+  }
+  .blog1 h2 p {
+    padding-left: 7%;
+  }
+  .intro-text {
+    padding-right: 13%;
+  }
+
+  /** blog 1 **/
+
+  .blog2 {
+    height: 100%; 
+  }
+
+  .blog2 b {
+    font-size: medium;
+  }
+
+  .blog3 {
+    height: 100%; 
+  }
+   
+  .blog4 {
+    height: 100%; 
+  }
+
+  .blog5 {
+    height: 100%; 
+  }
+  .blog6 {
+    height: 100%; 
+  }
+
+  .about-heading {
+    font-size: x-large;
+  }
+
+  .about-text {
+    font-size: large;
+  }
+
+  .contact-text {
+    padding-left: 22%;
+  }
+
+  .contact-heading {
+    padding-right: 10%;
+    font-size: x-large;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  .header-buttons {
+    justify-content: center;
+    gap: 8px;
+    font-size: smaller ;
+    padding-top: 6%;
+  }
+  .hero-img {
+    display: none;
+  }
+  
+  .hero-msg {
+    flex-wrap: wrap;
+    font-size: 17px;
+    padding-bottom: 90px;
+    margin-left: 170px;
+    text-align: center;
+    padding-top: 70px;
+    position: absolute;
+  }
+
+  .text {
+    font-size: 13px;
+    padding-top:0%;
+    margin-bottom: 20px;
+  }
+
+  .about-sec {
+    height: 100%;
+  }
+
+  .first-boxes {
+    display: block;
+  }
+
+  .other-boxes {
+    display: block;
+    padding-top: 0px;
+  }
+
+  .box-content {
+    width: 240px;
+    height: 430px;
+  }
+
+  footer {
+    font-size: small;
+  }
+
+  .blog1 {
+    height: 100%;
+    display: block;
+  }
+  .blog1 .p1-h1 {
+    padding-left:13%;
+    font-size:x-large;
+  }
+  .blog1 h2 p {
+    padding-left: 7%;
+  }
+  .intro-text {
+    padding-right: 13%;
+  }
+
+  /** blog 1 **/
+
+  .blog2 {
+    height: 100%; 
+  }
+
+  .blog2 b {
+    font-size: medium;
+  }
+
+  .blog3 {
+    height: 100%; 
+  }
+   
+  .blog4 {
+    height: 100%; 
+  }
+
+  .blog5 {
+    height: 100%; 
+  }
+  .blog6 {
+    height: 100%; 
+  }
+
+  .contact-text {
+    padding-left: 22%;
+  }
+
+
+}
+
+@media only screen and (max-width: 300px) {
+
+  .header-buttons {
+    justify-content: center;
+    gap: 7px;
+    font-size:small ;
+  }
+  .hero-img {
+    display: none;
+  }
+  
+  .hero-msg {
+    flex-wrap: wrap;
+    font-size: 16px;
+    padding-bottom: 70px;
+    margin-left: 170px;
+    text-align: center;
+    padding-top: 30px;
+    position: absolute;
+
+  }
+
+  .text {
+    font-size: 12px;
+    padding-top:0%;
+    margin-bottom: 20px;
+    padding-left: 0px;
+    font-weight: 700;
+    text-shadow: 2px 1px 2px rgb(107, 104, 104);
+  }
+
+  .about-sec {
+    height: 100%;
+  }
+
+  .first-boxes {
+    display: block;
+  }
+
+  .other-boxes {
+    display: block;
+    padding-top: 0px;
+  }
+
+  .box-content {
+    width: 180px;
+    height: 400px;
+  }
+
+  .imageContainer01 {
+    width: 100%;
+    height: 150px;
+  }
+
+  .imageContainer02 {
+    width: 100%;
+    height: 150px;
+  
+  }
+
+  .imageContainer03 {
+    width: 100%;
+    height: 150px;
+  
+  }
+
+  .imageContainer04 {
+    width: 100%;
+    height: 150px;
+  
+  }
+
+  .imageContainer05 {
+    width: 100%;
+    height: 150px;
+  
+  }
+
+  .imageContainer06 {
+    width: 100%;
+    height: 150px;
+  
+  }
+
+  footer {
+    font-size: small;
+  }
+
+  .blog1 {
+    height: 100%;
+    display: block;
+  }
+  .blog1 .p1-h1 {
+    font-size: medium;
+    padding-left:18%;
+  }
+
+  .blog1 h2 {
+    font-size: large;
+    padding-left: 10%;
+    flex-wrap: nowrap;
+  }
+
+  .blog1 h2 {
+    padding-left: 10%;
+  }
+
+  .blog1 p {
+    font-size: medium;
+    padding-left: 5%;
+    padding-right: 10%;
+  }
+
+  /** blog 2 **/
+
+  .blog2 {
+    height: 100%; 
+  }
+
+  .blog2 h1 {
+    font-size: larger;
+  }
+
+  .blog2 p {
+    font-size:small;
+  }
+
+  .blog2 b {
+    font-size: medium;
+    font-weight:600;
+  }
+
+  .blog3 {
+    height: 100%; 
+  }
+   
+  .blog3 h1 {
+    font-size: larger;
+  }
+
+  .blog3 p {
+    font-size:medium;
+  }
+
+  .blog4 {
+    height: 100%; 
+  }
+
+  .blog4 h1 {
+    font-size:x-large;
+  }
+
+  .blog4 p {
+    font-size:medium;
+  }
+
+  .blog5 {
+    height: 100%; 
+  }
+
+  .blog5 h1 {
+    font-size:x-large;
+    padding-bottom:10%;
+  }
+
+  .blog5 p {
+    font-size:medium;
+  }
+
+  .blog6 {
+    height: 100%; 
+  }
+
+  .blog6 h1 {
+    font-size:x-large;
+  }
+
+  footer {
+    font-size:10px;
+  }
+
+  .about-heading {
+    font-size: x-large;
+    padding-top: 12%;
+  }
+
+  .about-text {
+    font-size: medium;
+    padding-top: 8%;
+  }
+
+  .contact-heading {
+    font-size: x-large;
+    padding-top: 4%;
+    padding-right: 7%;
+  }
+
+  .contact-text {
+    padding-top: 8%;
+    font-size: medium;
+    padding-left: 23%;
+  }
+
+}
+
+
+
+/** hero sec animation**/
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-10-14 13:39:35
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-in-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-in-top {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-top {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
+
+
+
+ 
+
+ /*@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}*/
+
+/**blog pages animation**/
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-10-12 17:6:24
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/** about us page **/
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-10-13 19:59:12
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-10-6 11:7:35
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation bounce-in-right
+ * ----------------------------------------
+ */
+
+ .bounce-in-right {
+	-webkit-animation: bounce-in-right 1.1s both;
+	        animation: bounce-in-right 1.1s both;
+}
+
+.jello-horizontal {
+	-webkit-animation: jello-horizontal 0.9s both 2s;
+	        animation: jello-horizontal 0.9s both 2s;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-10-6 11:43:15
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation jello-horizontal
+ * ----------------------------------------
+ */
+ @-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+
+ @-webkit-keyframes bounce-in-right {
+  0% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateX(68px);
+            transform: translateX(68px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateX(32px);
+            transform: translateX(32px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-right {
+  0% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateX(68px);
+            transform: translateX(68px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateX(32px);
+            transform: translateX(32px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
 }

@@ -1,101 +1,102 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+    <div className="hero-sec">
+      <div className="hero-msg">
+        <h1><b>Discover Informative <br />Blogs of Tech World</b></h1>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <div className="hero-img"></div>
     </div>
+
+      <div className="about-sec">
+      <div className="text">
+        <h1>Here are some interesting Blogs!</h1>
+      </div>
+        <div className="first-boxes">
+          <div className="box-content bounce-in-right" id="box1">
+            <div className="imageContainer01"></div>
+            <h1 className="title">Getting Started with Web Development in 2024
+            </h1>
+            
+            <p className="description">
+              <h3>Key concepts :</h3>
+              Frontend vs Backend <br /> 
+              HTML, CSS, JavaScript <br />
+              Version Control with Git <br />
+            </p>
+              <Link href="/intro-web-development" className="readMore"> Read more </Link>
+          </div>
+
+        <div className="box-content bounce-in-right" id="box2">
+          <div className="imageContainer02"></div>
+          <h1 className="title">Mastering HTML & CSS: The Foundation of Web Pages
+          </h1>
+          <p className="description">
+            <h3>Key concepts :</h3>
+            Selectors: Target HTML elements <br />
+            Properties and Values: Define how elements should be styled <br />
+          </p>
+          <Link href="/mastering-html-css" className="readMore"> Read more </Link>
+
+        </div>
+
+        <div className="box-content bounce-in-right" id="box3">
+          <div className="imageContainer03"></div>
+          <h1 className="title">Introduction to JavaScript: Bringing Interactivity to Websites</h1>
+          <p className="description">
+          <h3>Key techniques:</h3>
+          Interactivity <br />
+          Dynamic Content <br />
+          Form Validation <br />
+          </p>
+          <Link href="/intro-js" className="readMore"> Read more </Link>
+        </div> 
+      </div>
+
+      <div className="other-boxes">
+        <div className="box-content bounce-in-right" id="box4">
+          <div className="imageContainer04"></div>
+          <h1 className="title">Exploring Frontend Frameworks: Why Next.js is a Game Changer</h1>
+          <p className="description">
+          <h3>Key features:</h3>
+          Server-Side Rendering (SSR) <br />
+          Static Site Generation (SSG) <br />
+          API Routes <br />
+          </p>
+          <Link href="/exploring-next.js" className="readMore"> Read more </Link>
+        </div>
+
+        <div className="box-content bounce-in-right" id="box5">
+          <div className="imageContainer05"></div>
+          <h1 className="title">Building Responsive Websites: Adapting to All Devices
+          </h1>
+          <p className="description">
+          <h3>Key techniques:</h3>
+          Fluid Grid Layouts <br /> 
+          Media Queries<br />
+          Flexible Images<br /> 
+          </p>
+          <Link href="/responsive-website" className="readMore"> Read more </Link>
+        </div>
+
+        <div className="box-content bounce-in-right" id="box6">
+          <div className="imageContainer06"></div>
+          <h1 className="title">The Future of Web Development: Tools and Trends for 2024
+          </h1>
+          <p className="description">
+          <h3>Important tools to learn:</h3>
+          Version Control <br />
+          Package Managers <br />
+          Design Tools <br />
+          </p>
+          <Link href="/future-web-dev" className="readMore"> Read more </Link> 
+        </div>
+      </div>
+    </div>
+      
+    </> 
   );
 }
